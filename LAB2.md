@@ -73,7 +73,7 @@ sheets и google drive.
 
 ![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/333-3.PNG)
 
-- Ссылка на таблицу https://docs.google.com/spreadsheets/d/1Uugw6_RrE4lGzw0dfHbWo2cmO1DOUuHJcA3lz9v2yGs/edit#gid=0
+- Ссылка на таблицу: https://docs.google.com/spreadsheets/d/1Uugw6_RrE4lGzw0dfHbWo2cmO1DOUuHJcA3lz9v2yGs/edit#gid=0
 
 - Код:
 
@@ -130,7 +130,6 @@ while counter <= 45:
     sh.sheet1.update(('C' + str(counter-30)), str(b))
     sh.sheet1.update(('D' + str(counter-30)), str(int(loss)))
     print(a, b, loss)
-
 
 ```
 
