@@ -45,6 +45,8 @@ sheets и google drive.
 
 ![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/111.PNG)
 
+- Реализовать запись данных из скрипта на python в google-таблицу.
+
 ![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/222.PNG)
 
 ![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/333-1.PNG)
