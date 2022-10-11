@@ -67,10 +67,9 @@ sheets и google drive.
 ![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/444.PNG)
 
 ## Задание 2
-### Должна ли величина loss стремиться к нулю при изменении исходных данных? Ответьте на вопрос, приведите пример выполнения кода, который подтверждает ваш ответ.
+### Реализовать запись в Google-таблицу набора данных, полученных с помощью линейной регрессии из лабораторной работы № 1
 
-- Перечисленные в этом туториале действия могут быть выполнены запуском на исполнение скрипт-файла, доступного [в репозитории](https://github.com/Den1sovDm1triy/hfss-scripting/blob/main/ScreatingSphereInAEDT.py).
-- Для запуска скрипт-файла откройте Ansys Electronics Desktop. Перейдите во вкладку [Automation] - [Run Script] - [Выберите файл с именем ScreatingSphereInAEDT.py из репозитория].
+- Ссылка на таблицу https://docs.google.com/spreadsheets/d/1Uugw6_RrE4lGzw0dfHbWo2cmO1DOUuHJcA3lz9v2yGs/edit#gid=0
 
 ```py
 
