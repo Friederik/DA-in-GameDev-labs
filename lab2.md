@@ -74,23 +74,58 @@ sheets и google drive.
 
 ```py
 
-import ScriptEnv
-ScriptEnv.Initialize("Ansoft.ElectronicsDesktop")
-oDesktop.RestoreWindow()
-oProject = oDesktop.NewProject()
-oProject.Rename("C:/Users/denisov.dv/Documents/Ansoft/SphereDIffraction.aedt", True)
-oProject.InsertDesign("HFSS", "HFSSDesign1", "HFSS Terminal Network", "")
-oDesign = oProject.SetActiveDesign("HFSSDesign1")
-oEditor = oDesign.SetActiveEditor("3D Modeler")
-oEditor.CreateSphere(
-	[
-		"NAME:SphereParameters",
-		"XCenter:="		, "0mm",
-		"YCenter:="		, "0mm",
-		"ZCenter:="		, "0mm",
-		"Radius:="		, "1.0770329614269mm"
-	], 
-)
+import numpy as np
+import gspread
+gc = gspread.service_account(filename='lab2-365217-74eeef80a64e.json')
+sh = gc.open("Lab2Sheets")
+
+x = [3, 21, 22, 34, 54, 34, 55, 67, 89, 99]
+x = np.array(x)
+y = [2, 22, 24, 65, 79, 82, 55, 130, 150, 199]
+y = np.array(y)
+
+
+def model(a, b, x):
+    return a*x + b
+
+
+def loss_function(a, b, x, y):
+    num = len(x)
+    prediction = model(a, b, x)
+    return (0.5/num) * (np.square(prediction-y)).sum()
+
+
+def optimize(a, b, x, y):
+    num = len(x)
+    prediction = model(a, b, x)
+    da = (1.0/num) * ((prediction -y)*x).sum()
+    db = (1.0/num) * ((prediction -y).sum())
+    a = a - Lr*da
+    b = b - Lr*db
+    return a, b
+
+
+def iterate(a, b, x, y, times):
+    for i in range(times):
+        a, b = optimize(a, b, x, y)
+    return a, b
+
+
+a = np.random.rand(1)
+b = np.random.rand(1)
+Lr = 0.000001
+counter = 30
+
+while counter <= 45:
+    counter += 1
+    a, b = iterate(a, b, x, y, counter)
+    loss = loss_function(a, b, x, y)
+    sh.sheet1.update(('A' + str(counter-30)), str(counter-30))
+    sh.sheet1.update(('B' + str(counter-30)), str(a))
+    sh.sheet1.update(('C' + str(counter-30)), str(b))
+    sh.sheet1.update(('D' + str(counter-30)), str(int(loss)))
+    print(a, b, loss)
+
 
 ```
 
