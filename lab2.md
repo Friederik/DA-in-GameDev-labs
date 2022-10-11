@@ -49,11 +49,17 @@ sheets и google drive.
 
 ![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/222.PNG)
 
+- Создать новый проект на Unity, который будет получать данные из google-
+таблицы, в которую были записаны данные в предыдущем пункте.
+
 ![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/333-1.PNG)
 
 ![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/333-2.PNG)
 
 ![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/333-3.PNG)
+
+- Написать функционал на Unity, в котором будет воспризводиться аудио-
+файл в зависимости от значения данных из таблицы.
 
 ![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/444.PNG)
 
