@@ -69,7 +69,13 @@ sheets и google drive.
 ## Задание 2
 ### Реализовать запись в Google-таблицу набора данных, полученных с помощью линейной регрессии из лабораторной работы № 1
 
+- Скриншот таблицы
+
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/333-3.PNG)
+
 - Ссылка на таблицу https://docs.google.com/spreadsheets/d/1Uugw6_RrE4lGzw0dfHbWo2cmO1DOUuHJcA3lz9v2yGs/edit#gid=0
+
+- Код:
 
 ```py
 
