@@ -40,12 +40,15 @@
 ## Задание 1
 ### Реализовать совместную работу и передачу данных в связке Python - Google-Sheets – Unity.
 
+С помощью предоставленных файлов и видео привожу скриншоты выполненного задания
+
 - В облачном сервисе google console подключить API для работы с google
 sheets и google drive.
 
 ![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/111.PNG)
 
 - Реализовать запись данных из скрипта на python в google-таблицу.
+- Ссылка на таблицу https://docs.google.com/spreadsheets/d/1KHek-z6fytXRC-yw9gpJICnswzhvAuW64lxq4sPL5Cs/edit#gid=0
 
 ![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/222.PNG)
 
