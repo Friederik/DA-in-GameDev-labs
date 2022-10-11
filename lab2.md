@@ -42,6 +42,15 @@
 
 ![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/111.PNG)
 
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/222.PNG)
+
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/333-1.PNG)
+
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/333-2.PNG)
+
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/333-3.PNG)
+
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/444.PNG)
 
 ## Задание 2
 ### Должна ли величина loss стремиться к нулю при изменении исходных данных? Ответьте на вопрос, приведите пример выполнения кода, который подтверждает ваш ответ.
