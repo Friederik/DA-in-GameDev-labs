@@ -1,14 +1,14 @@
-# АНАЛИЗ ДАННЫХ И ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ [in GameDev]
-Отчет по лабораторной работе #1 выполнил(а):
-- Иванова Ивана Варкравтовна
-- РИ000024
+# ЛАБОРАТОРНАЯ РАБОТА. СБОР, ОБРАБОТКА И ВИЗУАЛИЗАЦИЯ ТЕСТОВОГО НАБОРА ДАННЫХ.
+Отчет по лабораторной работе #2 выполнил:
+- Рыжанков Илья Александрович
+- РИ-210943
 Отметка о выполнении заданий (заполняется студентом):
 
 | Задание | Выполнение | Баллы |
 | ------ | ------ | ------ |
-| Задание 1 | # | 60 |
-| Задание 2 | # | 20 |
-| Задание 3 | # | 20 |
+| Задание 1 | * | 60 |
+| Задание 2 | * | 20 |
+| Задание 3 | * | 20 |
 
 знак "*" - задание выполнено; знак "#" - задание не выполнено;
 
@@ -35,91 +35,112 @@
 - ✨Magic ✨
 
 ## Цель работы
-Ознакомиться с основными операторами зыка Python на примере реализации линейной регрессии.
+Ознакомиться с основными операторами языка Python на примере реализации линейной регрессии.
 
 ## Задание 1
-### Пошагово выполнить каждый пункт раздела "ход работы" с описанием и примерами реализации задач
-Ход работы:
-- Произвести подготовку данных для работы с алгоритмом линейной регрессии. 10 видов данных были установлены случайным образом, и данные находились в линейной зависимости. Данные преобразуются в формат массива, чтобы их можно было вычислить напрямую при использовании умножения и сложения.
+### Реализовать совместную работу и передачу данных в связке Python - Google-Sheets – Unity.
 
-```py
+С помощью предоставленных файлов и видео привожу скриншоты выполненного задания
 
-In [ ]:
-#Import the required modules, numpy for calculation, and Matplotlib for drawing
-import numpy as np
-import matplotlib.pyplot as plt
-#This code is for jupyter Notebook only
-%matplotlib inline
+- В облачном сервисе google console подключить API для работы с google
+sheets и google drive.
 
-# define data, and change list to array
-x = [3,21,22,34,54,34,55,67,89,99]
-x = np.array(x)
-y = [2,22,24,65,79,82,55,130,150,199]
-y = np.array(y)
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/111.PNG)
 
-#Show the effect of a scatter plot
-plt.scatter(x,y)
+- Реализовать запись данных из скрипта на python в google-таблицу.
+- Ссылка на таблицу https://docs.google.com/spreadsheets/d/1KHek-z6fytXRC-yw9gpJICnswzhvAuW64lxq4sPL5Cs/edit#gid=0
 
-```
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/222.PNG)
 
-- Определите связанные функции. Функция модели: определяет модель линейной регрессии wx+b. Функция потерь: функция потерь среднеквадратичной ошибки. Функция оптимизации: метод градиентного спуска для нахождения частных производных w и b.
+- Создать новый проект на Unity, который будет получать данные из google-
+таблицы, в которую были записаны данные в предыдущем пункте.
 
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/333-1.PNG)
+
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/333-2.PNG)
+
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/333-3.PNG)
+
+- Написать функционал на Unity, в котором будет воспризводиться аудио-
+файл в зависимости от значения данных из таблицы.
+
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/444.PNG)
 
 ## Задание 2
-### Должна ли величина loss стремиться к нулю при изменении исходных данных? Ответьте на вопрос, приведите пример выполнения кода, который подтверждает ваш ответ.
+### Реализовать запись в Google-таблицу набора данных, полученных с помощью линейной регрессии из лабораторной работы № 1
 
-- Перечисленные в этом туториале действия могут быть выполнены запуском на исполнение скрипт-файла, доступного [в репозитории](https://github.com/Den1sovDm1triy/hfss-scripting/blob/main/ScreatingSphereInAEDT.py).
-- Для запуска скрипт-файла откройте Ansys Electronics Desktop. Перейдите во вкладку [Automation] - [Run Script] - [Выберите файл с именем ScreatingSphereInAEDT.py из репозитория].
+- Скриншот таблицы:
+
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/333-3.PNG)
+
+- Ссылка на таблицу: https://docs.google.com/spreadsheets/d/1Uugw6_RrE4lGzw0dfHbWo2cmO1DOUuHJcA3lz9v2yGs/edit#gid=0
+
+- Код:
 
 ```py
 
-import ScriptEnv
-ScriptEnv.Initialize("Ansoft.ElectronicsDesktop")
-oDesktop.RestoreWindow()
-oProject = oDesktop.NewProject()
-oProject.Rename("C:/Users/denisov.dv/Documents/Ansoft/SphereDIffraction.aedt", True)
-oProject.InsertDesign("HFSS", "HFSSDesign1", "HFSS Terminal Network", "")
-oDesign = oProject.SetActiveDesign("HFSSDesign1")
-oEditor = oDesign.SetActiveEditor("3D Modeler")
-oEditor.CreateSphere(
-	[
-		"NAME:SphereParameters",
-		"XCenter:="		, "0mm",
-		"YCenter:="		, "0mm",
-		"ZCenter:="		, "0mm",
-		"Radius:="		, "1.0770329614269mm"
-	], 
-)
+import numpy as np
+import gspread
+gc = gspread.service_account(filename='lab2-365217-74eeef80a64e.json')
+sh = gc.open("Lab2Sheets")
+
+x = [3, 21, 22, 34, 54, 34, 55, 67, 89, 99]
+x = np.array(x)
+y = [2, 22, 24, 65, 79, 82, 55, 130, 150, 199]
+y = np.array(y)
+
+
+def model(a, b, x):
+    return a*x + b
+
+
+def loss_function(a, b, x, y):
+    num = len(x)
+    prediction = model(a, b, x)
+    return (0.5/num) * (np.square(prediction-y)).sum()
+
+
+def optimize(a, b, x, y):
+    num = len(x)
+    prediction = model(a, b, x)
+    da = (1.0/num) * ((prediction -y)*x).sum()
+    db = (1.0/num) * ((prediction -y).sum())
+    a = a - Lr*da
+    b = b - Lr*db
+    return a, b
+
+
+def iterate(a, b, x, y, times):
+    for i in range(times):
+        a, b = optimize(a, b, x, y)
+    return a, b
+
+
+a = np.random.rand(1)
+b = np.random.rand(1)
+Lr = 0.000001
+counter = 30
+
+while counter <= 45:
+    counter += 1
+    a, b = iterate(a, b, x, y, counter)
+    loss = loss_function(a, b, x, y)
+    sh.sheet1.update(('A' + str(counter-30)), str(counter-30))
+    sh.sheet1.update(('B' + str(counter-30)), str(a))
+    sh.sheet1.update(('C' + str(counter-30)), str(b))
+    sh.sheet1.update(('D' + str(counter-30)), str(int(loss)))
+    print(a, b, loss)
 
 ```
 
 ## Задание 3
-### Какова роль параметра Lr? Ответьте на вопрос, приведите пример выполнения кода, который подтверждает ваш ответ. В качестве эксперимента можете изменить значение параметра.
+### Самостоятельно разработать сценарий воспроизведения звукового сопровождения в Unity в зависимости от изменения считанных данных в задании 2
 
-- Перечисленные в этом туториале действия могут быть выполнены запуском на исполнение скрипт-файла, доступного [в репозитории](https://github.com/Den1sovDm1triy/hfss-scripting/blob/main/ScreatingSphereInAEDT.py).
-- Для запуска скрипт-файла откройте Ansys Electronics Desktop. Перейдите во вкладку [Automation] - [Run Script] - [Выберите файл с именем ScreatingSphereInAEDT.py из репозитория].
+- В зависимости от погрешности воспроизводится определенный аудио-файл.
 
-```py
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/666.PNG)
 
-import ScriptEnv
-ScriptEnv.Initialize("Ansoft.ElectronicsDesktop")
-oDesktop.RestoreWindow()
-oProject = oDesktop.NewProject()
-oProject.Rename("C:/Users/denisov.dv/Documents/Ansoft/SphereDIffraction.aedt", True)
-oProject.InsertDesign("HFSS", "HFSSDesign1", "HFSS Terminal Network", "")
-oDesign = oProject.SetActiveDesign("HFSSDesign1")
-oEditor = oDesign.SetActiveEditor("3D Modeler")
-oEditor.CreateSphere(
-	[
-		"NAME:SphereParameters",
-		"XCenter:="		, "0mm",
-		"YCenter:="		, "0mm",
-		"ZCenter:="		, "0mm",
-		"Radius:="		, "1.0770329614269mm"
-	], 
-)
-
-```
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/777.PNG)
 
 ## Выводы
 
@@ -137,3 +158,4 @@ oEditor.CreateSphere(
 ## Powered by
 
 **BigDigital Team: Denisov | Fadeev | Panov**
+
