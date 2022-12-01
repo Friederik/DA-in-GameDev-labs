@@ -45,18 +45,22 @@
 Обучение оператору OR:
 
 ![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/lab4_1.PNG)
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/lab4_1_2.PNG)
 
 Обучение оператору AND:
 
 ![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/lab4_2.PNG)
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/lab4_2_2.PNG)
 
 Обучение оператору NAND:
 
 ![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/lab4_3.PNG)
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/lab4_3_2.PNG)
 
 Обучение оператору XOR:
 
 ![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/lab4_4.PNG)
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/lab4_4_2.PNG)
 
 ## Задание 2
 ### Реализовать запись в Google-таблицу набора данных, полученных с помощью линейной регрессии из лабораторной работы № 1
