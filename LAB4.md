@@ -44,6 +44,8 @@
 
 Обучение оператору OR:
 
+Обучается в среднем за 5 эпох.
+
 ![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/lab4_1.PNG)
 ![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/lab4_1_2.PNG)
 
@@ -56,10 +58,14 @@
 
 Обучение оператору NAND:
 
+Обучается в среднем за 5 эпох.
+
 ![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/lab4_3.PNG)
 ![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/lab4_3_2.PNG)
 
 Обучение оператору XOR:
+
+Не обучается, неважно сколько эпох.
 
 ![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/lab4_4.PNG)
 
