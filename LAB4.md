@@ -60,7 +60,6 @@
 Обучение оператору XOR:
 
 ![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/lab4_4.PNG)
-![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/lab4_4_2.PNG)
 
 ## Задание 2
 ### Реализовать запись в Google-таблицу набора данных, полученных с помощью линейной регрессии из лабораторной работы № 1
