@@ -35,36 +35,28 @@
 - ✨Magic ✨
 
 ## Цель работы
-Ознакомиться с основными операторами языка Python на примере реализации линейной регрессии.
+Ознакомиться с принципом работы перцептрона и реализовать его в Unity.
 
 ## Задание 1
-### Реализовать совместную работу и передачу данных в связке Python - Google-Sheets – Unity.
+### В проекте Unity реализовать перцептрон, который умеет производить вычисления.
 
 С помощью предоставленных файлов и видео привожу скриншоты выполненного задания
 
-- В облачном сервисе google console подключить API для работы с google
-sheets и google drive.
+Обучение оператору OR:
 
-![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/111.PNG)
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/lab4_1.PNG)
 
-- Реализовать запись данных из скрипта на python в google-таблицу.
-- Ссылка на таблицу https://docs.google.com/spreadsheets/d/1KHek-z6fytXRC-yw9gpJICnswzhvAuW64lxq4sPL5Cs/edit#gid=0
+Обучение оператору AND:
 
-![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/222.PNG)
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/lab4_2.PNG)
 
-- Создать новый проект на Unity, который будет получать данные из google-
-таблицы, в которую были записаны данные в предыдущем пункте.
+Обучение оператору NAND:
 
-![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/333-1.PNG)
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/lab4_3.PNG)
 
-![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/333-2.PNG)
+Обучение оператору XOR:
 
-![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/333-3.PNG)
-
-- Написать функционал на Unity, в котором будет воспризводиться аудио-
-файл в зависимости от значения данных из таблицы.
-
-![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/444.PNG)
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/lab4_4.PNG)
 
 ## Задание 2
 ### Реализовать запись в Google-таблицу набора данных, полученных с помощью линейной регрессии из лабораторной работы № 1
