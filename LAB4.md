@@ -49,6 +49,8 @@
 
 Обучение оператору AND:
 
+Обучается в среднем за 5 эпох.
+
 ![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/lab4_2.PNG)
 ![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/lab4_2_2.PNG)
 
