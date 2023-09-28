@@ -1,4 +1,4 @@
-# ЛАБОРАТОРНАЯ РАБОТА. СБОР, ОБРАБОТКА И ВИЗУАЛИЗАЦИЯ ТЕСТОВОГО НАБОРА ДАННЫХ.
+![image](https://github.com/Friederik/DA-in-GameDev-labs/assets/70342668/043c2f11-854b-4ed4-b7d3-5a32326c4515)# ЛАБОРАТОРНАЯ РАБОТА. СБОР, ОБРАБОТКА И ВИЗУАЛИЗАЦИЯ ТЕСТОВОГО НАБОРА ДАННЫХ.
 Отчет по лабораторной работе #1 выполнил:
 - Рыжанков Илья Александрович
 - РИ-210943
@@ -72,27 +72,27 @@ World в консоль.
 
   Шаг 1. Инициализация и модель итеративной оптимизации:
 
-![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/2-2.PNG)
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/2-3_1.PNG)
 
   Шаг 2. На второй итерации отображаются значения параметров, значения потерь и эффекты визуализации после итерации:
 
-![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/2-2.PNG)
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/2-3_2.PNG)
 
   Шаг 3. Третья итерация показывает значения параметров, значения потерь ивизуализацию после итерации:
 
-![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/2-2.PNG)
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/2-3_3.PNG)
 
   Шаг 4. На четвертой итерации отображаются значения параметров, значения потерь и эффекты визуализации:
 
-![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/2-2.PNG)
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/2-3_4.PNG)
 
   Шаг 5. Пятая итерация показывает значение параметра, значение потерь и эффект визуализации после итерации:
 
-![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/2-2.PNG)
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/2-3_5.PNG)
 
   Шаг 6. 10000-я итерация, показывающая значения параметров, потери и визуализацию после итерации:
 
-![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/2-2.PNG)
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/2-3_6.PNG)
 
 ## Задание 3
 ### Самостоятельно разработать сценарий воспроизведения звукового сопровождения в Unity в зависимости от изменения считанных данных в задании 2
