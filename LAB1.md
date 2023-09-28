@@ -69,6 +69,7 @@ World в консоль.
 ![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/2-2.PNG)
 
 3. Начать итерацию
+
   Шаг 1. Инициализация и модель итеративной оптимизации:
 
 ![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/2-2.PNG)
