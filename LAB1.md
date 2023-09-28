@@ -118,9 +118,22 @@ World в консоль.
 
 - Какова роль параметра Lr? Ответьте на вопрос, приведите пример выполнения кода, который подтверждает ваш ответ. В качестве эксперимента можете изменить значение параметра.
 
-![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/666.PNG)
+Ответ: Это параметр, который определяет размер шага для каждой итерации. Если брать шаг слишком большой, то не получится найти искомый минимум, мы будем постоянно перескакивать искомое минимальное значение. А при слишком малом значении понадобится слишком много итераций.
 
-![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/777.PNG)
+Изначальное значение Lr:
+
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/3-4_1.PNG)
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/3-4_2.PNG)
+
+Слишком большое значение Lr:
+
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/3-4_3.PNG)
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/3-4_4.PNG)
+
+Слишком малое значение Lr:
+
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/3-4_5.PNG)
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/3-4_6.PNG)
 
 ## Выводы
 
