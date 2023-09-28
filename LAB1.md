@@ -68,6 +68,31 @@ World в консоль.
 
 ![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/2-2.PNG)
 
+3. Начать итерацию
+  Шаг 1. Инициализация и модель итеративной оптимизации:
+
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/2-2.PNG)
+
+  Шаг 2. На второй итерации отображаются значения параметров, значения потерь и эффекты визуализации после итерации:
+
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/2-2.PNG)
+
+  Шаг 3. Третья итерация показывает значения параметров, значения потерь ивизуализацию после итерации:
+
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/2-2.PNG)
+
+  Шаг 4. На четвертой итерации отображаются значения параметров, значения потерь и эффекты визуализации:
+
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/2-2.PNG)
+
+  Шаг 5. Пятая итерация показывает значение параметра, значение потерь и эффект визуализации после итерации:
+
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/2-2.PNG)
+
+  Шаг 6. 10000-я итерация, показывающая значения параметров, потери и визуализацию после итерации:
+
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/2-2.PNG)
+
 ## Задание 3
 ### Самостоятельно разработать сценарий воспроизведения звукового сопровождения в Unity в зависимости от изменения считанных данных в задании 2
 
