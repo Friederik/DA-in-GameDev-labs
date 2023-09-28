@@ -54,71 +54,19 @@ World в консоль.
 ![Image alt](https://github.com/Friederik/labs/blob/main/33.PNG)
 
 ## Задание 2
-### Реализовать запись в Google-таблицу набора данных, полученных с помощью линейной регрессии из лабораторной работы № 1
+### В разделе «ход работы» пошагово выполнить каждый пункт с описанием и примером реализации задачи по теме лабораторной работы
 
-- Скриншот таблицы:
+1. Произвести подготовку данных для работы с алгоритмом линейной регрессии. 10 видов данных были установлены случайным образом, и данные находились в линейной зависимости. Данные преобразуются в формат массива, чтобы их можно было вычислить напрямую при использовании умножения и сложения.
 
-![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/333-3.PNG)
+- Скриншот:
 
-- Ссылка на таблицу: https://docs.google.com/spreadsheets/d/1Uugw6_RrE4lGzw0dfHbWo2cmO1DOUuHJcA3lz9v2yGs/edit#gid=0
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/2-1.PNG)
 
-- Код:
+2. Определите связанные функции. Функция модели: определяет модель линейной регрессии wx+b. Функция потерь: функция потерь среднеквадратичной ошибки. Функция оптимизации: градиентного спуска для нахождения частных производных w и b.
 
-```py
+- Скриншот:
 
-import numpy as np
-import gspread
-gc = gspread.service_account(filename='lab2-365217-74eeef80a64e.json')
-sh = gc.open("Lab2Sheets")
-
-x = [3, 21, 22, 34, 54, 34, 55, 67, 89, 99]
-x = np.array(x)
-y = [2, 22, 24, 65, 79, 82, 55, 130, 150, 199]
-y = np.array(y)
-
-
-def model(a, b, x):
-    return a*x + b
-
-
-def loss_function(a, b, x, y):
-    num = len(x)
-    prediction = model(a, b, x)
-    return (0.5/num) * (np.square(prediction-y)).sum()
-
-
-def optimize(a, b, x, y):
-    num = len(x)
-    prediction = model(a, b, x)
-    da = (1.0/num) * ((prediction -y)*x).sum()
-    db = (1.0/num) * ((prediction -y).sum())
-    a = a - Lr*da
-    b = b - Lr*db
-    return a, b
-
-
-def iterate(a, b, x, y, times):
-    for i in range(times):
-        a, b = optimize(a, b, x, y)
-    return a, b
-
-
-a = np.random.rand(1)
-b = np.random.rand(1)
-Lr = 0.000001
-counter = 30
-
-while counter <= 45:
-    counter += 1
-    a, b = iterate(a, b, x, y, counter)
-    loss = loss_function(a, b, x, y)
-    sh.sheet1.update(('A' + str(counter-30)), str(counter-30))
-    sh.sheet1.update(('B' + str(counter-30)), str(a))
-    sh.sheet1.update(('C' + str(counter-30)), str(b))
-    sh.sheet1.update(('D' + str(counter-30)), str(int(loss)))
-    print(a, b, loss)
-
-```
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/2-2.PNG)
 
 ## Задание 3
 ### Самостоятельно разработать сценарий воспроизведения звукового сопровождения в Unity в зависимости от изменения считанных данных в задании 2
