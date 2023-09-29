@@ -75,7 +75,29 @@
 ![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/4-1_8.PNG)
 
 ## Задание 2
-### -
+### Построить графики зависимости количества эпох от ошибки обучения. Указать от чего зависит необходимое количество эпох обучения.
+
+На графика ось X - количество эпох (EP), ось - Y - общее количество ошибок (TE)
+
+График для оператора OR:
+
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/4-3_1.PNG)
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/4-3_2.PNG)
+
+График для оператора AND:
+
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/4-3_3.PNG)
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/4-3_4.PNG)
+
+График для оператора NAND:
+
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/4-3_5.PNG)
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/4-3_6.PNG)
+
+График для оператора XOR:
+
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/4-3_7.PNG)
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/4-3_8.PNG)
 
 ## Задание 3
 ### -
