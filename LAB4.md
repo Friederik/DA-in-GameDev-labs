@@ -49,30 +49,30 @@
 
 Обучение оператору OR:
 
+Оператор OR работает исправно, в данном случае обучился за 6 эпох.
+
 ![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/4-1_2.PNG)
 ![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/4-1_3.PNG)
 
-Оператор OR работает исправно, в данном случае обучился за 6 эпох.
-
 Обучение оператору AND:
+
+Оператор AND работает исправно, в данном случае обучился также за 6 эпох.
 
 ![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/4-1_4.PNG)
 ![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/4-1_5.PNG)
 
-Оператор AND работает исправно, в данном случае обучился также за 6 эпох.
-
 Обучение оператору NAND:
+
+Оператор NAND работает исправно, в данном случае обучился быстрее остальных за 4 эпохи.
 
 ![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/4-1_6.PNG)
 ![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/4-1_7.PNG)
 
-Оператор NAND работает исправно, в данном случае обучился быстрее остальных за 4 эпохи.
-
 Обучение оператору XOR:
 
-![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/4-1_8.PNG)
-
 Оператор XOR не обучается, неважно сколько эпох. Одиночный перцептрон не может решить нелинейные задачи, XOR - является такой.
+
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/4-1_8.PNG)
 
 ## Задание 2
 ### -
