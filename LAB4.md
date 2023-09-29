@@ -1,4 +1,4 @@
-# ЛАБОРАТОРНАЯ РАБОТА. СБОР, ОБРАБОТКА И ВИЗУАЛИЗАЦИЯ ТЕСТОВОГО НАБОРА ДАННЫХ.
+![image](https://github.com/Friederik/DA-in-GameDev-labs/assets/70342668/9288d2b5-c399-40be-96b8-7d7a4f5b1e88)# ЛАБОРАТОРНАЯ РАБОТА. СБОР, ОБРАБОТКА И ВИЗУАЛИЗАЦИЯ ТЕСТОВОГО НАБОРА ДАННЫХ.
 Отчет по лабораторной работе #2 выполнил:
 - Рыжанков Илья Александрович
 - РИ-210943
@@ -40,34 +40,39 @@
 ## Задание 1
 ### В проекте Unity реализовать перцептрон, который умеет производить вычисления.
 
-С помощью предоставленных файлов и видео привожу скриншоты выполненного задания
+С помощью предоставленных файлов и видео привожу скриншоты выполненного задания.
+
+На пустой GameObject добавляю представленный скрипт перцептрона и устанавливаю 8 эпох обучения, далее подставляю значения для каждого логического блока.
+
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/4-1.PNG)
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/4-2.PNG)
 
 Обучение оператору OR:
 
-Обучается в среднем за 5 эпох.
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/4-1_2.PNG)
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/4-1_3.PNG)
 
-![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/lab4_1.PNG)
-![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/lab4_1_2.PNG)
+Оператор OR работает исправно, в данном случае обучился за 6 эпох.
 
 Обучение оператору AND:
 
-Обучается в среднем за 5 эпох.
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/4-1_4.PNG)
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/4-1_5.PNG)
 
-![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/lab4_2.PNG)
-![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/lab4_2_2.PNG)
+Оператор AND работает исправно, в данном случае обучился также за 6 эпох.
 
 Обучение оператору NAND:
 
-Обучается в среднем за 5 эпох.
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/4-1_6.PNG)
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/4-1_7.PNG)
 
-![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/lab4_3.PNG)
-![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/lab4_3_2.PNG)
+Оператор NAND работает исправно, в данном случае обучился быстрее остальных за 4 эпохи.
 
 Обучение оператору XOR:
 
-Не обучается, неважно сколько эпох.
+![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/4-1_8.PNG)
 
-![Image alt](https://github.com/Friederik/DA-in-GameDev-labs/blob/main/lab4_4.PNG)
+Оператор XOR не обучается, неважно сколько эпох. Одиночный перцептрон не может решить нелинейные задачи, XOR - является такой.
 
 ## Задание 2
 ### -
